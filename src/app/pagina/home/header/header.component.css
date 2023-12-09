@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container{
+    background-color: #e398af;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.imagem{
+    padding: 0 50px;
+}
+
+.logo {
+    width: 100px;
+    ;
+}
+
+.navbar {
+    padding-right: 100px;
+}
+
+.navbar a {
+    padding: 15px;
+}
