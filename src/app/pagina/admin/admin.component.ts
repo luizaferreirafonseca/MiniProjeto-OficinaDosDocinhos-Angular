@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../home/header/header.component';
 import { FooterComponent } from '../home/footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { Router, RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+
 
 
 interface Menu { 
@@ -15,12 +17,13 @@ interface Menu {
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, CommonModule],
+  imports: [HeaderComponent, FooterComponent, CommonModule, RouterOutlet],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })
 export class AdminComponent {
 
+  constructor(private router: Router) {}
 
 
   itemsCards:Menu[] = [
@@ -34,7 +37,6 @@ export class AdminComponent {
    {imageUrl: 'assets/banoffe.jpeg', name:'Banoffe',descricao:'Banoffe recheado',valor:'R$70.00'},
    {imageUrl: 'assets/letter.jpg', name:'Letter Brownie',descricao:'Brownie presenteavel de ninho e nutella',valor:'R$70.00'}
   ]
-
 
 
 
