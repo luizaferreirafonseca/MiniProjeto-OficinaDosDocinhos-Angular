@@ -106,3 +106,13 @@ h1{
   }
 
   
+.container-formulario{
+  border: 1px solid black;
+}
+
+
+  /* .formulario{
+    border-radius: 20px;
+    border: 1px solid black;
+
+  } */

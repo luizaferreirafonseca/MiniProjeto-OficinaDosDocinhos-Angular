@@ -3,7 +3,8 @@ import { HeaderComponent } from '../home/header/header.component';
 import { FooterComponent } from '../home/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormGroup, FormControl} from '@angular/forms';
+
 
 
 
@@ -17,7 +18,7 @@ interface Menu {
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, FormsModule, CommonModule, RouterOutlet],
+  imports: [HeaderComponent, FooterComponent, ReactiveFormsModule, CommonModule, RouterOutlet],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })
@@ -38,7 +39,18 @@ export class AdminComponent {
    {imageUrl: 'assets/letter.jpg', name:'Letter Brownie',descricao:'Brownie presenteavel de ninho e nutella',valor:'R$70.00'}
   ]
 
+  formulario = new FormGroup({
+    name: new FormControl,
+    telefone: new FormControl,
+    endereco: new FormControl,
+    descricao: new FormControl,
+    selecionar: new FormControl
 
+
+
+  })
+
+  console.log(formulario)
 
 
 
