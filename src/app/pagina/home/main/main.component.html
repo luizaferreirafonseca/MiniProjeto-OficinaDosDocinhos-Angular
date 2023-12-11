@@ -2,7 +2,7 @@
     <div class="main-container">
         <div class="titulo">
             <p class="title">Conheça algumas de nossas melhores delícias</p>
-            <button class="btn-mensagem"><a href="#logar">Faça o cadastro e prepare seu pedido!</a></button>
+            <button class="btn-mensagem"><a href="#mi">Faça o cadastro e prepare seu pedido!</a></button>
 
         </div>
         <div class="sweets-list">
@@ -14,7 +14,7 @@
     </div>
 
 
-    <div class="login-cadastro-container" id="logar">
+    <div class="login-cadastro-container">
         <div class="container d-flex align-items-center">
             <div class="container-foto">
                 <img src="/assets/login-foto.jpeg" alt="" class="login-foto">
@@ -25,11 +25,11 @@
                 <input type="email" formControlName="email" class="form-control mb-2  p-2" id="exampleFormControlInput1" placeholder="E-mail">
                 <p *ngIf="formulario.get('email')?.touched && formulario.get('email')?.hasError('required')" class="mensagem-erro">O email precisa ser informado.</p>
                 <p *ngIf="formulario.get('email')?.touched && formulario.get('email')?.hasError('email')" class="mensagem-erro">Informe um e-mail válido.</p>
-                <input type="senha" formControlName="senha" id="inputPassword5" class="form-control mb-2 mt-1 p-2" aria-describedby="passwordHelpBlock" placeholder="Senha">
+                <input type="password" formControlName="senha" id="inputPassword5" class="form-control mb-2 mt-1 p-2" aria-describedby="passwordHelpBlock" placeholder="Senha">
                 <p *ngIf="formulario.get('senha')?.touched && formulario.get('senha')?.hasError('required')" class="mensagem-erro">Informe uma senha.</p>
                 <p *ngIf="formulario.get('senha')?.touched && formulario.get('senha')?.hasError('minlength')" class="mensagem-erro">Informe uma senha válida.</p>
                 <p *ngIf="aviso">Email ou senha incorretos</p>
-                <input type="submit" value="Entrar" class="btn-formulario w-100 mt-2" [disabled]="formulario.invalid" (click)="autenticar()"> 
+                <input type="submit" value="Entrar" class="btn-formulario w-100 mt-2 p-1" [disabled]="formulario.invalid" (click)="autenticar()"> 
                 <p class="mensagem">Não tem uma conta? <a class="cadastrar" (click)="exibirFormularioCadastro()">Inscreva-se!</a></p>
     
                 
@@ -37,12 +37,15 @@
 
             <div *ngIf="mostrarFormularioCadastro" class="formulario-dois mt-3 w-50">
                 <h3 class="mb-3 fs-5">Novo por aqui? Crie sua conta:</h3>
-                        <input type="text" class="form-control mb-3 p-2" id="exampleFormControlInput2" placeholder="Nome">
-                        <input type="email" class="form-control mb-3 p-2" id="exampleFormControlInput3" placeholder="E-mail" onchange="saveValuesEmailCriarConta">
-                        <input type="password" id="inputPassword5 mb-3 p-2" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Senha">
+                        <input type="text" class="form-control mb-2 p-2" id="exampleFormControlInput2" placeholder="Nome">
+                        <input type="email" class="form-control mb-2 mt-1 p-2" id="exampleFormControlInput3" placeholder="E-mail" onchange="saveValuesEmailCriarConta">
+                        <input type="password" id="inputPassword5" class="form-control mb-2 mt-1 p-2" aria-describedby="passwordHelpBlock" placeholder="Senha">
 
-                        <input type="submit" value="Criar conta" class="btn-formulario mt-3 w-100"> 
+                        <input type="submit" value="Criar conta" class="btn-formulario mt-2 p-2 w-100"> 
             </div>
+
+            
+
         </div>
 
     </div>

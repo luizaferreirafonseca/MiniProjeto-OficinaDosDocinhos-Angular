@@ -42,13 +42,30 @@ h1{
     line-height: 20px;
 }
 
+
+textarea{
+  border-radius: 10px;
+  border: 1px solid rgb(225, 224, 224);
+}
+
+select{
+  border: 1px solid rgb(225, 224, 224);
+  border-radius: 8px;
+}
+
 .btn-enviarpedido{
-    margin-left: 25%;
+    width: 55%;
+    margin-left: 20%;
     border-radius: 15px;
     border: none;
-    padding: 5px;
     margin-bottom: 10px;
-    background-color: rgb(247, 204, 235);;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(156, 156, 156);
+}
+
+
+.mensagem-select{
+  font-weight: bold;
 }
 
 
@@ -77,12 +94,13 @@ h1{
     border: 1px solid #ddd;
   }
   
-  .checkbox-container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
+
+
+
+
   
   .checkbox-container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #f06ca3;
   }
   
   .checkmark:after {
@@ -107,12 +125,10 @@ h1{
 
   
 .container-formulario{
-  border: 1px solid black;
+  border-radius: 35px;
+  background-color: rgb(252, 240, 249);
+  margin-bottom: 50px;
+
 }
 
 
-  /* .formulario{
-    border-radius: 20px;
-    border: 1px solid black;
-
-  } */

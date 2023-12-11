@@ -50,8 +50,9 @@ export class AdminComponent {
 
   })
 
-  console.log(formulario)
 
-
+getSelectValue(){
+  return this.formulario.get('selecionar')?.value 
+}
 
 }
