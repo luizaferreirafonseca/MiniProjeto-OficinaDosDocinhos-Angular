@@ -17,7 +17,7 @@ interface Menu {
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, CommonModule, RouterOutlet],
+  imports: [HeaderComponent, FooterComponent, FormsModule, CommonModule, RouterOutlet],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })
