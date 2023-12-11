@@ -4,8 +4,10 @@
     padding: 0;
 }
 
+
+
 .navbar-container{
-    background-color: #e398af;
+    background-color: #f0bbdb4F;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -18,8 +20,10 @@
 }
 
 .logo {
-    width: 100px;
-    ;
+    width: 130px;
+    border: 2px dotted pink;
+    border-radius: 80px;
+    
 }
 
 .navbar {
@@ -27,5 +31,13 @@
 }
 
 .navbar a {
-    padding: 15px;
+    padding: 12px;
+    font-size: 1.3rem;
+    color:  #8f8d8e;
+    cursor: pointer;
+    
+}
+
+.navbar a:hover{
+    color: brown;
 }

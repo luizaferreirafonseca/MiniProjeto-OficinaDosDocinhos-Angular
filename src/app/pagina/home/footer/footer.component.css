@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color:#f0bbdb4F; 
+    padding: 40px;
+}
+
+.textos{
+    font-size: 0.7rem;
+    color: gray;
+}
+
+

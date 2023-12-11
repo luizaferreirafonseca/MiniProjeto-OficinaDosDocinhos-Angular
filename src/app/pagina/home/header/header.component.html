@@ -1,11 +1,10 @@
 <header>
     <div class="navbar-container">
         <div class="imagem">
-            <img src="/assets/bbb.jpg" class="logo">
+            <img src="/assets/dodo.png" class="logo">
         </div>
         <nav class="navbar">
-            <a>Home</a>
-            <a>Quem somos nós</a>
+            <a *ngFor="let link of links">{{link}}</a>
         </nav>
     </div>
 </header>

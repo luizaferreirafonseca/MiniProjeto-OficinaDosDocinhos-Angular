@@ -1,1 +1,51 @@
-<p>admin works!</p>
+<app-header></app-header>
+<main>
+    <h1 class="text-center fs-2 mt-4">Menu</h1>
+
+    <div class="container-menu">
+        <div *ngFor="let item of itemsCards" class="menu">
+            <img src="{{item.imageUrl}}" class="imagem-menu">
+            <span class="nome-menu">{{item.name}}</span>
+            <span>{{item.descricao}}</span>
+            <span class="valor-menu">{{item.valor}}</span>
+        </div>
+    </div>
+
+    <div class="forms d-flex flex-column align-items-center mt-5">
+        <h1 class="text-center fs-2 pb-4">Faça seu pedido</h1>
+
+        <div class="formulario w-50 d-flex flex-column">
+            <p>Insira seu nome completo:</p>
+            <input type="email" class="form-control mb-2  p-2" placeholder="E-mail">
+            <p>Insira seu número de telefone:</p>
+            <input type="text" class="form-control mb-2  p-2" placeholder="E-mail">
+            <p>Insira seu endereço:</p>
+            <input type="text" formControlName="email" class="form-control mb-2  p-2" placeholder="E-mail">
+            <p>Descrição do pedido:</p>
+            <textarea class="w-100" rows="5"></textarea>
+
+            
+            <label for="periodo" class="pt-4 pb-2">Selecione um período para receber seu pedido:</label>
+            <select id="periodo" class="seletor w-25">
+                <option value="selecionar">Selecionar</option>
+                <option value="manha">Manhã</option>
+                <option value="dia">Dia</option>
+                <option value="noite">Noite</option>
+            </select>
+
+            <p class="pt-4">Receber notificações de promoções via e-mail:</p>
+            <label class="checkbox-container">
+                Aceito receber notificações
+                <input type="checkbox" formControlName="aceitarNotificacoes">
+                <span class="checkmark"></span>
+            </label>
+
+            <input type="submit" value="Enviar" class="btn-enviarpedido w- mt-3 p-2">
+        </div>
+    </div>
+
+
+
+
+</main>
+<app-footer></app-footer>
